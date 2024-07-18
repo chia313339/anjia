@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安家湛</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/weblogo.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <div id="app" v-cloak>
+        <div v-if="isSmallScreen" class="overlay">
+            <p>請更換尺寸更大畫面以獲得最佳體驗</p>
+        </div>
+        <div v-else class="fullwidthbanner-container">
+            <!-- 導覽列 -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-bottom custom-navbar " style="font-family: 'LXGW WenKai TC', cursive; ">
+                <a class="navbar-brand" href="index.html" style="margin-left: 2rem;"><img src="img/indexlogo.png" alt="" style="max-width: auto; max-height: 3vh;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropup active">
+                            <a class="nav-link " href="page11.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>區域環境</span>&nbsp<span style="font-size:0.9vw;">ENVIRONMENT</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page11.html">信義區後花園</a>
+                                <a class="dropdown-item " href="page12.html">休憩公園</a>
+                                <a class="dropdown-item active" href="page13.html">鄰近校園</a>
+                                <a class="dropdown-item" href="page14.html">生活機能</a>
+                                <a class="dropdown-item" href="page15.html">交通便利</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropup">
+                            <a class="nav-link " href="page21.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>品牌團隊</span>&nbsp<span style="font-size:0.9vw;">BRAND</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page21.html">安家國際</a>
+                                <a class="dropdown-item" href="page22.html">日本織本構造</a>
+                                <a class="dropdown-item" href="page23.html">HHAA建築設計</a>
+                                <a class="dropdown-item" href="page24.html">信義代銷</a>
+                            </div>
+                        </li >
+                        <li class="nav-item dropup">
+                            <a class="nav-link " href="page21.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>工法建材</span>&nbsp<span style="font-size:0.8vw;">CONSTRUCTION</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page31.html">精湛工法</a>
+                                <a class="dropdown-item" href="page32.html">質感建材</a>
+                            </div>
+                        <li class="nav-item dropup">
+                            <a class="nav-link " href="page41.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>建築圖面</span>&nbsp<span style="font-size:0.9vw;">ARCHITECTURE</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page41.html">外觀透視</a>
+                                <a class="dropdown-item" href="page42.html">公設規劃</a>
+                                <a class="dropdown-item" href="page43.html">平面規劃</a>
+                                <a class="dropdown-item" href="page44.html">園藝景觀</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropup">
+                            <a class="nav-link " href="page51.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>市場資料</span>&nbsp<span style="font-size:0.9vw;">INFORMATION</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page51.html">文山區實價登錄</a>
+                                <a class="dropdown-item" href="page52.html">信義、大安區實價登錄</a>
+                                <a class="dropdown-item" href="page53.html">十大優勢</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- 全屏圖片 -->
+            <div class="fullwidthbanner-container">
+                <img src="img/p13/back.png" alt="background">
+                <div class="p13-container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#m1">
+                                        <div class="card">
+                                        <img src="img/p13/萬芳國中.jpg" class="card-img-top" alt="Image 1">
+                                        <div class="card-body">
+                                            <p class="page13url card-text" style="font-size: 1vw;">萬芳高中</p>
+                                        </div>
+                                    </div></a>
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#m2">
+                                        <div class="card">
+                                            <img src="img/p13/明道國小.jpg" class="card-img-top" alt="Image 2">
+                                            <div class="card-body">
+                                                <p class="page13url card-text"style="font-size: 1vw;">明道國小</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#m3">
+                                        <div class="card">
+                                        <img src="img/p13/再興中學.jpg" class="card-img-top" alt="Image 1">
+                                        <div class="card-body">
+                                            <p class="page13url card-text" style="font-size: 1vw;">再興學校</p>
+                                        </div>
+                                    </div></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="m1" tabindex="-1" aria-labelledby="m1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="btn-close close-button" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <img src="img/p13/萬芳in.png" class="img-fluid">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="m2" tabindex="-1" aria-labelledby="m2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="btn-close close-button" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <img src="img/p13/明道in.png" class="img-fluid">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade " id="m3" tabindex="-1" aria-labelledby="m3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="btn-close close-button" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <img src="img/p13/再興in.png" class="img-fluid">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+
+
+<!-- Vue 3 CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Bootstrap JS 和 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

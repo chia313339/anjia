@@ -1,3 +1,7 @@
+[v-cloak] {
+    display: none;
+}
+
 .fullwidthbanner-container {
     position: relative;
     width: 100%;
@@ -51,16 +55,17 @@
 }
 
 .custom-navbar {
-    background-color: rgba(220, 218, 203, 0.2); /* 加入半透明效果 */
+    background-color: rgba(220, 218, 203, 0.9); /* 加入半透明效果 */
 }
 
 .navbar-nav .nav-item {
-    margin: 0 1rem; /* 设置导航项之间的间隔，你可以调整这个值 */
+    margin: 0 1vw; /* 设置导航项之间的间隔，你可以调整这个值 */
+    font-size: 1.4vw ;
 }
 
 .navbar-nav .nav-link {
     transition: color 0.3s, font-weight 0.3s, font-size 0.3s;
-    font-size: 1rem ;
+    font-size: 1.4vw ;
 }
 
 .navbar-nav .nav-item.active .nav-link,
@@ -86,15 +91,22 @@
     display: none;
 }
 
+.dropdown-menu .dropdown-item {
+    font-size: 1.25vw; /* 調整下拉選單文字大小 */
+}
+
 .dropdown-item.active,
 .dropdown-item:active {
     background-color: rgba(255, 255, 255, 0.3) !important; /* 设置白色半透明背景 */
     color: #394E26 !important;
-    font-size: calc(1rem + 1px);
+    font-size: calc(1.25vw + 1px);
+}
+.page11url  {
+    font-size: 1vw; /* 增加字體大小 */
 }
 
 .page11url:hover  {
-    font-size: calc(1.05rem); /* 增加字體大小 */
+    font-size: calc(1.05vw); /* 增加字體大小 */
     color: #394E26;
     background-color: transparent;
 }
@@ -121,4 +133,75 @@
     top: 10px;
     right: 10px;
     z-index: 1055;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* 調整這裡的透明度 */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.p12-container {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 75%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption h5 {
+    text-align: right;
+    font-size: 2vw;
+}
+
+.p13-container {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 60%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.page13url  {
+    font-size: 1vw; /* 增加字體大小 */
+}
+
+.page13url:hover  {
+    font-size: calc(1.05vw); /* 增加字體大小 */
+    color: #394E26;
+    background-color: transparent;
+}
+
+.page13url a {
+    color: black; /* 繼承父元素的顏色 */
+    text-decoration: none; /* 移除下劃線 */
+}
+
+.page13url a:hover {
+    color: #394E26; /* 設定為你想要的顏色 */
 }
