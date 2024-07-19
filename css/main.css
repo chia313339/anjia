@@ -112,22 +112,7 @@
 }
 
 
-.modal-dialog {
-    width: 90%;
-    max-width: 90%;
-    height: 90%;
-    max-height: 90%;
-}
-.modal-body {
-    position: relative;
-    padding: 0;
-    height: 100%;
-}
-.modal-body img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+
 .close-button {
     position: absolute;
     top: 10px;
@@ -135,9 +120,7 @@
     z-index: 1055;
 }
 
-.modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.7) !important; /* 調整這裡的透明度 */
-}
+
 
 .overlay {
     position: fixed;
@@ -189,19 +172,35 @@
 
 .page13url  {
     font-size: 1vw; /* 增加字體大小 */
+    text-decoration: none;
 }
 
 .page13url:hover  {
     font-size: calc(1.05vw); /* 增加字體大小 */
     color: #394E26;
     background-color: transparent;
+    
 }
 
 .page13url a {
     color: black; /* 繼承父元素的顏色 */
     text-decoration: none; /* 移除下劃線 */
+    
 }
 
 .page13url a:hover {
     color: #394E26; /* 設定為你想要的顏色 */
+}
+
+
+.p14-container {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
