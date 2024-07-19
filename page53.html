@@ -85,10 +85,32 @@
                 </div>
             </nav>
             <!-- 全屏圖片 -->
+            <!-- 全屏圖片 -->
             <div class="fullwidthbanner-container">
-                <img src="img/p31/back2.png" alt="background">
-                <div class="row p14-container">
-                    <h1>開發中 &nbsp;&nbsp;<i class="fa-solid fa-person-digging"></i></h1>
+                <img src="img/p21/back.png" alt="background">
+                <div class="row p21-container carousel-container">
+                    <div class="col-12">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/p53/1.png" class="d-block w-100 img-fluid">
+                                    <div class="carousel-caption d-none d-md-block"></div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/p53/2.png" class="d-block w-100 img-fluid">
+                                    <div class="carousel-caption d-none d-md-block"></div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -96,6 +118,13 @@
         </div>
         
     </div>
+    <style>
+        .carousel-container {
+        border: 2px solid white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 5px; /* 如果需要內邊距 */
+    }
+    </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const mainImage = document.getElementById('main-image');

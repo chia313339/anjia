@@ -86,9 +86,20 @@
             </nav>
             <!-- 全屏圖片 -->
             <div class="fullwidthbanner-container">
-                <img src="img/p31/back2.png" alt="background">
-                <div class="row p14-container">
-                    <h1>開發中 &nbsp;&nbsp;<i class="fa-solid fa-person-digging"></i></h1>
+                <img src="img/p21/back.png" alt="background">
+                <div class="row p21-container">
+                    
+                    <div class="col-12">
+                        <div id="carouselExampleControls" class="carousel slide page5" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/p51/文山區實價登錄.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -96,6 +107,13 @@
         </div>
         
     </div>
+    <style>
+        .page5 {
+        border: 2px solid white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 5px; /* 如果需要內邊距 */
+    }
+    </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const mainImage = document.getElementById('main-image');

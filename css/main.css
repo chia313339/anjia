@@ -204,3 +204,15 @@
     align-items: center;
     justify-content: flex-start;
 }
+
+.p21-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
