@@ -26,7 +26,7 @@ createApp({
             }
         },
         checkScreenSize() {
-            this.isSmallScreen = window.innerWidth < 1180;
+            this.isSmallScreen = window.innerWidth < 1023;
         }
     }
 }).mount('#app');
