@@ -216,3 +216,9 @@
     align-items: center;
     justify-content: flex-start;
 }
+
+.nav-logo {
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
