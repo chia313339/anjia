@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<body>
 
     <div id="app" v-cloak>
         <div v-if="isSmallScreen" class="overlay">
@@ -86,9 +87,9 @@
             </nav>
             <!-- 全屏圖片 -->
             <div class="fullwidthbanner-container">
-                <img src="img/p21/back.png" alt="background">
+                <img src="img/p21/back.png" alt="background" class="img-fluid backgroundimg">
                 <div class="row p21-container carousel-container">
-                    <div class="col-12">
+                    <div class="col-12 content_text">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -136,6 +137,18 @@
         
     </div>
     <style>
+
+        .content_text{
+                    animation: content_FadeIn 2s; /* 動畫效果 */
+                }
+            @keyframes content_FadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
         .carousel-container {
         border: 2px solid white;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

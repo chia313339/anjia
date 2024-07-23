@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<body>
 
     <div id="app" v-cloak>
         <div v-if="isSmallScreen" class="overlay">
@@ -86,8 +87,8 @@
             </nav>
             <!-- 全屏圖片 -->
             <div class="fullwidthbanner-container">
-                <img src="img/p13/back.png" alt="background">
-                <div class="p13-container">
+                <img src="img/p13/back.png" alt="background" class="img-fluid backgroundimg">
+                <div class="p13-container content_text">
                     <div class="row">
                         <div class="col-md-6  mb-3">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#m1" style="text-decoration: none;">
@@ -169,6 +170,18 @@
     
 
     <style>
+        .content_text{
+            animation: content_FadeIn 3s; /* 動畫效果 */
+        }
+        @keyframes content_FadeIn {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+        
         
         .card-img-top {
             max-height: 20vh;

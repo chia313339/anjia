@@ -2,18 +2,110 @@
     display: none;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh; /* 這裡你可以根據需要調整高度 */
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    z-index: -1; /* 確保背景圖片在最下層 */
+}
+
+.backgroundimg {
+    position: fixed; /* 使用 fixed 來固定背景圖片 */
+    width: 100vw;
+    height: auto; /* 確保背景圖片覆蓋整個視窗 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1; /* 確保圖片容器位於背景圖片之上 */
+    background-size: cover; /* 確保背景圖片覆蓋整個容器 */
+    background-position: center; /* 將背景圖片置中 */
+    animation: backgroundimg 1s; /* 動畫效果 */
+}
+
+@keyframes backgroundimg {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
+
 .fullwidthbanner-container {
     position: relative;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* 確保圖片容器位於背景圖片之上 */
 }
 
-.fullwidthbanner-container img {
+
+.leaf {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('../img/leaf.png') no-repeat center center;
+    background-size: contain;
+    animation: fall linear infinite;
+    z-index: 1; 
+}
+
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        left: calc(100% * var(--left-start));
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        left: calc(100% * var(--left-end));
+    }
+}
+
+
+
+.modal {
+    pointer-events: auto; /* 確保可以點擊背景關閉 modal */
+}
+
+.modal-dialog {
+    width: 80%;
+    max-width: 90%;
+    height: 80%;
+    max-height: 90%;
+    margin: 1.75rem auto;
+}
+.modal-body {
+    position: relative;
+    padding: 0;
+    height: 100%;
+}
+.modal-body img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* 調整透明度 */
+    pointer-events: none; /* 確保 backdrop 不會阻止點擊事件傳遞 */
+}
+
+body.modal-open {
+    overflow: hidden !important; /* 禁止滾動 */
+}
+
 
 .navbar {
     background-color: rgba(255, 255, 255, 0); /* 透明背景 */

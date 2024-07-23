@@ -19,39 +19,141 @@
             <p>請更換尺寸更大畫面以獲得最佳體驗</p>
         </div>
         <div v-else class="fullwidthbanner-container">
-            <img :src="imageSrc" alt="First Page Banner">
-            <a href="page11.html">
-                <button type="button" class="btn banner-btn" style="position: absolute; top: 73%; left: 40%; transform: translate(-50%, -50%);">
-                    <span style="font-size: 1.5vw;">區域環境</span> <br>
-                    <span style="font-size: 0.7vw;">ENVIRONMENT</span>
-                </button>
-            </a>
-            <a href="page21.html">
-                <button type="button" class="btn banner-btn" style="position: absolute; top: 73%; left: 53%; transform: translate(-50%, -50%);">
-                    <span style="font-size: 1.5vw;">品牌團隊</span> <br>
-                    <span style="font-size: 0.7vw;">BRAND</span>
-                </button>
-            </a>
-            <a href="page31.html">
-                <button type="button" class="btn banner-btn" style="position: absolute; top: 73%; left: 65%; transform: translate(-50%, -50%);">
-                    <span style="font-size: 1.5vw;">工法建材</span> <br>
-                    <span style="font-size: 0.7vw;">CONSTRUCTION</span>
-                </button>
-            </a>
-            <a href="page41.html">
-                <button type="button" class="btn banner-btn" style="position: absolute; top: 73%; left: 78%; transform: translate(-50%, -50%);">
-                    <span style="font-size: 1.5vw;">建築圖面</span> <br>
-                    <span style="font-size: 0.7vw;">ARCHITECTURE</span>
-                </button>
-            </a>
-            <a href="page51.html">
-                <button type="button" class="btn banner-btn" style="position: absolute; top: 73%; left: 90%; transform: translate(-50%, -50%);">
-                    <span style="font-size: 1.5vw;">市場資料</span> <br>
-                    <span style="font-size: 0.7vw;">INFORMATION</span>
-                </button>
-            </a>
+            <img src="img/index_girl.png" alt="" class="indexgirl">
+            <img src="img/grass1.png" alt="" class="grass1">
+            <img src="img/grass2.png" alt="" class="grass2">
+            <div>
+                <a href="page11.html">
+                    <button type="button" class="btn banner-btn" style="position: absolute; top: 73%; left: 40%; transform: translate(-50%, -50%); animation-delay: 0.5s;">
+                        <span style="font-size: 1.5vw;">區域環境</span> <br>
+                        <span style="font-size: 0.7vw;">ENVIRONMENT</span>
+                    </button>
+                </a>
+                <a href="page21.html">
+                    <button type="button" class="btn banner-btn" style="position: absolute; top: 73%; left: 53%; transform: translate(-50%, -50%); animation-delay: 0.7s;">
+                        <span style="font-size: 1.5vw;">品牌團隊</span> <br>
+                        <span style="font-size: 0.7vw;">BRAND</span>
+                    </button>
+                </a>
+                <a href="page31.html">
+                    <button type="button" class="btn banner-btn" style="position: absolute; top: 73%; left: 65%; transform: translate(-50%, -50%); animation-delay: 0.9s;">
+                        <span style="font-size: 1.5vw;">工法建材</span> <br>
+                        <span style="font-size: 0.7vw;">CONSTRUCTION</span>
+                    </button>
+                </a>
+                <a href="page41.html">
+                    <button type="button" class="btn banner-btn" style="position: absolute; top: 73%; left: 78%; transform: translate(-50%, -50%); animation-delay: 1.1s;">
+                        <span style="font-size: 1.5vw;">建築圖面</span> <br>
+                        <span style="font-size: 0.7vw;">ARCHITECTURE</span>
+                    </button>
+                </a>
+                <a href="page51.html">
+                    <button type="button" class="btn banner-btn" style="position: absolute; top: 73%; left: 90%; transform: translate(-50%, -50%); animation-delay: 1.3s;">
+                        <span style="font-size: 1.5vw;">市場資料</span> <br>
+                        <span style="font-size: 0.7vw;">INFORMATION</span>
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
+    <style>
+
+        body {
+            width: 100%;
+            height: 100vh; /* 這裡你可以根據需要調整高度 */
+            overflow: hidden;
+            background-image: url('img/firstpage.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1; /* 確保背景圖片在最下層 */
+        }
+
+        .grass1 {
+            position: absolute;
+            max-width: 30vw;
+            right: -10%;
+            top: 0;
+            right: 0;
+            animation: grass1 1s linear; /* 動畫效果 */
+        }
+
+        @keyframes grass1 {
+            0% {
+                right: -10%;
+                top:-10%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .grass2 {
+            position: absolute;
+            max-width: 30vw;
+            right: 0%;
+            bottom: 0;
+            right: 0;
+            animation: grass2 1.2s linear; /* 動畫效果 */
+        }
+
+        @keyframes grass2 {
+            0% {
+                right: -10%;
+                bottom: -10%;
+                opacity: 0;
+            }
+            80% {
+                opacity: 0.8;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .indexgirl {
+            position: absolute;
+            max-width: 30vw;
+            height: auto;
+            left: 5%;
+            top: 20%;
+            animation: girlIn 2s linear; /* 動畫效果 */
+        }
+
+        @keyframes girlIn {
+            0% {
+                top: 30%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                top: 20%; /* 最終位置 */
+                opacity: 1;
+            }
+        }
+
+        .banner-btn {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+        }
+
+
+    </style>
     <!-- Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Bootstrap JS 和 jQuery -->
