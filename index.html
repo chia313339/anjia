@@ -19,7 +19,12 @@
             <p>請更換尺寸更大畫面以獲得最佳體驗</p>
         </div>
         <div v-else class="fullwidthbanner-container">
-            <img src="img/index_girl.webp" alt="" class="indexgirl">
+            <!-- <img src="img/index_girl.webp" alt="" class="indexgirl"> -->
+            <div class="video-container">
+                <video class="video" autoplay loop muted>
+                    <source src="img/girlmov.webm" type="video/mp4">
+                </video>
+            </div>
             <img src="img/grass1.webp" alt="" class="grass1">
             <img src="img/grass2.webp" alt="" class="grass2">
             <div>
@@ -123,6 +128,21 @@
             top: 20%;
             animation: girlIn 2s linear; /* 動畫效果 */
         }
+
+        .video-container {
+            position: absolute;
+            left: 5%;
+            top: 20%;
+        }
+
+
+        .video-container video {
+            max-width: 35vw;
+            height: auto;
+            object-fit: cover;
+            animation: girlIn 2s linear; /* 動畫效果 */
+        }
+
 
         @keyframes girlIn {
             0% {
